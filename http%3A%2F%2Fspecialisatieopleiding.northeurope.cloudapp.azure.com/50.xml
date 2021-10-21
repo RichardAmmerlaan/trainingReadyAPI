@@ -14,6 +14,12 @@
         <con:default>opleiding</con:default>
       </con:parameter>
     </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:ns="http://specialisatieopleiding.northeurope.cloudapp.azure.com/api/rest/products/50">ns:Response</con:element>
+    </con:representation>
     <con:request id="f11fb9f0-29e0-4fcc-ba73-2d45ec325a0b" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>http://specialisatieopleiding.northeurope.cloudapp.azure.com</con:endpoint>
