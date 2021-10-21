@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:interface xsi:type="con:RestService" id="77566e9f-322a-484a-9f70-73e9252da7ee" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://specialisatieopleiding.northeurope.cloudapp.azure.com" type="rest" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<con:interface xsi:type="con:RestService" id="77566e9f-322a-484a-9f70-73e9252da7ee" name="http://specialisatieopleiding.northeurope.cloudapp.azure.com" type="rest" wadlVersion="http://wadl.dev.java.net/2009/02" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <con:settings>
     <con:setting id="77566e9f-322a-484a-9f70-73e9252da7eefileName">http%3A%2F%2Fspecialisatieopleiding.northeurope.cloudapp.azure.com</con:setting>
   </con:settings>
-  <con:definitionCache/>
+  <con:definitionCache type="TEXT" rootPart=""/>
   <con:endpoints>
     <con:endpoint>http://specialisatieopleiding.northeurope.cloudapp.azure.com</con:endpoint>
   </con:endpoints>

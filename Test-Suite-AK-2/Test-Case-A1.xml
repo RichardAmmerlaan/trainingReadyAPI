@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="46f37769-5973-43bf-a959-e6ef3d4c45d3" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Test Case A1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="46f37769-5973-43bf-a959-e6ef3d4c45d3fileName">Test-Case-A1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="a37bbcc3-e127-4546-8eda-4a1b4541c050">
+    <con:settings/>
+    <con:config service="http://specialisatieopleiding.northeurope.cloudapp.azure.com" methodName="50" resourcePath="/api/rest/products/50" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="9654d04b-593f-4754-b4b0-3382caf23a46" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://specialisatieopleiding.northeurope.cloudapp.azure.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://specialisatieopleiding.northeurope.cloudapp.azure.com/api/rest/products/50</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="c3505ea9-385b-410a-b439-3faabffd7185" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="d0c6f601-6d5e-40e2-8084-8e97e1f4d9fb" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

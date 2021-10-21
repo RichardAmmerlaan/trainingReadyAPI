@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="de2882a1-5e5b-4411-8527-34820d95f281" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="http://specialisatieopleiding.northeurope.cloudapp.azure.com Test Case 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="de2882a1-5e5b-4411-8527-34820d95f281" keepSession="false" name="http://specialisatieopleiding.northeurope.cloudapp.azure.com Test Case 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="de2882a1-5e5b-4411-8527-34820d95f281fileName">http%3A%2F%2Fspecialisatieopleiding.northeurope.cloudapp.azure.com-Test-Case-1</con:setting>
   </con:settings>
-  <con:testStep type="datasource" name="Data Source" id="334730e8-ce9b-4e89-badf-5f047327db16">
+  <con:testStep id="334730e8-ce9b-4e89-badf-5f047327db16" name="Data Source" type="datasource">
     <con:settings/>
     <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:dataSource type="File">
@@ -21,7 +21,7 @@
       <con:restartOnRun>true</con:restartOnRun>
     </con:config>
   </con:testStep>
-  <con:testStep type="datasourceloop" name="Data Source Loop" id="95604488-bf00-4059-8911-ee6966531159">
+  <con:testStep id="95604488-bf00-4059-8911-ee6966531159" name="Data Source Loop" type="datasourceloop">
     <con:settings/>
     <con:config>
       <dataSourceStep>Data Source</dataSourceStep>
@@ -29,20 +29,20 @@
       <discardResults>false</discardResults>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="Request 1" id="9617fc50-cf8e-46ef-8e36-4743850fa108">
+  <con:testStep id="9617fc50-cf8e-46ef-8e36-4743850fa108" name="Request 1" type="restrequest">
     <con:settings/>
-    <con:config service="http://specialisatieopleiding.northeurope.cloudapp.azure.com" resourcePath="/api/rest/products/50" methodName="50" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Request 1" id="f11fb9f0-29e0-4fcc-ba73-2d45ec325a0b" mediaType="application/json">
+    <con:config xsi:type="con:RestRequestStep" methodName="50" resourcePath="/api/rest/products/50" service="http://specialisatieopleiding.northeurope.cloudapp.azure.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest id="f11fb9f0-29e0-4fcc-ba73-2d45ec325a0b" mediaType="application/json" name="Request 1">
         <con:settings/>
         <con:endpoint>http://specialisatieopleiding.northeurope.cloudapp.azure.com</con:endpoint>
         <con:request/>
-        <con:assertion type="Valid HTTP Status Codes" id="5d303ecd-93ee-4a39-990e-5dc5d934b685" name="Valid HTTP Status Codes">
+        <con:assertion id="5d303ecd-93ee-4a39-990e-5dc5d934b685" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
             <codes>200</codes>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="8a1439e3-2100-4bd8-a379-a558245ff122" name="Response SLA">
+        <con:assertion id="8a1439e3-2100-4bd8-a379-a558245ff122" name="Response SLA" type="Response SLA Assertion">
           <con:configuration>
             <SLA>200</SLA>
           </con:configuration>
@@ -52,7 +52,9 @@
           <con:authType>No Authorization</con:authType>
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-        <con:parameters/>
+        <con:parameters>
+          <con:entry key="X-Oc-Merchant-Id" value="opleiding"/>
+        </con:parameters>
         <con:parameterOrder>
           <con:entry>X-Oc-Merchant-Id</con:entry>
         </con:parameterOrder>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="50" path="/api/rest/products/50" id="7b3277ff-b2f8-4ba1-ab5e-cb3358f6bfa5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="7b3277ff-b2f8-4ba1-ab5e-cb3358f6bfa5" name="50" path="/api/rest/products/50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="7b3277ff-b2f8-4ba1-ab5e-cb3358f6bfa5fileName">50</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="50" id="e43c6bf8-163a-43e8-92a8-77c3b4bb2973" method="GET">
+  <con:method id="e43c6bf8-163a-43e8-92a8-77c3b4bb2973" method="GET" name="50">
     <con:settings/>
     <con:parameters>
       <con:parameter>
@@ -14,7 +14,13 @@
         <con:default>opleiding</con:default>
       </con:parameter>
     </con:parameters>
-    <con:request name="Request 1" id="f11fb9f0-29e0-4fcc-ba73-2d45ec325a0b" mediaType="application/json">
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:ns="http://specialisatieopleiding.northeurope.cloudapp.azure.com/api/rest/products/50">ns:Response</con:element>
+    </con:representation>
+    <con:request id="f11fb9f0-29e0-4fcc-ba73-2d45ec325a0b" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>http://specialisatieopleiding.northeurope.cloudapp.azure.com</con:endpoint>
       <con:credentials>
