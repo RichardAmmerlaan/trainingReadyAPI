@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="22a75cce-866c-487d-acd2-ae215817d87d" name="http://specialisatieopleiding.northeurope.cloudapp.azure.com Test Suite" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="22a75cce-866c-487d-acd2-ae215817d87dfileName">http%3A%2F%2Fspecialisatieopleiding.northeurope.cloudapp.azure.com-Test-Suite</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>
