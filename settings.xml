@@ -3,6 +3,7 @@
   <con:settings>
     <con:setting id="95060b00-a6e2-4c96-ae96-8c426d03c6a0fileName">trainingReadyAPI</con:setting>
   </con:settings>
+  <con:requirements/>
   <con:properties/>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>

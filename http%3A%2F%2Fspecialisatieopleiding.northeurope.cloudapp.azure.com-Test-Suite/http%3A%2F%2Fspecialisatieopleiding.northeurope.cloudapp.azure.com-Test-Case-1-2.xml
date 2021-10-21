@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="cdfb0662-3456-4101-8246-2f96933da559" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="http://specialisatieopleiding.northeurope.cloudapp.azure.com Test Case 1 2" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="cdfb0662-3456-4101-8246-2f96933da559fileName">http%3A%2F%2Fspecialisatieopleiding.northeurope.cloudapp.azure.com-Test-Case-1-2</con:setting>
+  </con:settings>
+  <con:testStep type="datasource" name="Data Source" id="ba95859f-afa3-4d6b-9573-8aab9e9308ae">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="File">
+        <con:configuration>
+          <fileName>C:/repo/trainingReadyAPI/DATA/inputdemo.csv</fileName>
+          <separator>,</separator>
+          <trim>true</trim>
+          <charset>Cp1252</charset>
+          <quotedValues>false</quotedValues>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>nummer</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="Data Source Loop" id="1f46b4d6-55b0-49fd-b675-c071f6aa6d41">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>Data Source</dataSourceStep>
+      <targetStep>Request 1</targetStep>
+      <discardResults>false</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1" id="c40fb05c-75d7-4831-afdd-b9ecf3bf9aa3">
+    <con:settings/>
+    <con:config service="http://specialisatieopleiding.northeurope.cloudapp.azure.com" resourcePath="/api/rest/products/50" methodName="50" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="f11fb9f0-29e0-4fcc-ba73-2d45ec325a0b" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://specialisatieopleiding.northeurope.cloudapp.azure.com</con:endpoint>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="5d303ecd-93ee-4a39-990e-5dc5d934b685" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="8a1439e3-2100-4bd8-a379-a558245ff122" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:parameterOrder>
+          <con:entry>X-Oc-Merchant-Id</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
