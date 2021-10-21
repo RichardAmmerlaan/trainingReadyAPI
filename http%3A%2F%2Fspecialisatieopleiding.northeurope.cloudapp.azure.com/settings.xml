@@ -3,7 +3,7 @@
   <con:settings>
     <con:setting id="77566e9f-322a-484a-9f70-73e9252da7eefileName">http%3A%2F%2Fspecialisatieopleiding.northeurope.cloudapp.azure.com</con:setting>
   </con:settings>
-  <con:definitionCache/>
+  <con:definitionCache type="TEXT" rootPart=""/>
   <con:endpoints>
     <con:endpoint>http://specialisatieopleiding.northeurope.cloudapp.azure.com</con:endpoint>
   </con:endpoints>
